@@ -23,7 +23,7 @@ nav a{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    padding: 0.65em 3em;
+    padding: 0.65em 5px;
 }
 
 nav a:hover{
@@ -31,11 +31,12 @@ nav a:hover{
     background-color: #ff9933;
 }
 
-.imagem{
-    background-color: #000;
+.logo{
+    background-color: #aaaa;
+    margin-top: -1.1em;
 }
 
-.imagem img{
+.logo img{
     height: 450px;
     width: 18%;
     margin-left: 41%;
@@ -47,7 +48,7 @@ h1{
     height: 80px;
     font-size: 70px;
     padding-left: 30%;
-    margin-top: -0.26em;
+    margin-top: -0.4em;
 }
 
 .banner > img{
@@ -101,6 +102,16 @@ h1{
     margin-bottom: 0.5em;
 }
 
+.historia{
+    display: flex;
+    flex-direction: column;
+}
+
+.comparacao{
+    display: flex;
+    flex-direction: row;
+}
+
 #login{
     background-color: #545454;
     color: #fff;
@@ -134,7 +145,7 @@ form{
 }
 
 input[type="submit"] { /*com isso vc não precisa criar um id e consegue estilizar o que vc quer*/
-    background-color: #ff9933;
+    background-color: #00347f;
     color: #fff;
     border: 1px solid #ff9933;
     margin: 20px 0;
@@ -145,8 +156,8 @@ input[type="submit"] { /*com isso vc não precisa criar um id e consegue estiliz
 }
 
 input[type="submit"]:hover { 
-    background-color: #a70000;
-    color: #ffcc00;
+    background-color: #ff9933;
+    color: #00347f;
     border: 1px solid #a70000;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
     margin: 18px 0 20px 0; 
@@ -194,6 +205,7 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
     height: 4em;
     text-align: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .nome_plano{
@@ -214,19 +226,10 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
     flex-direction: row;
 }
 
-.plano_destaque{
-    display: flex;
-    flex-direction: column;
-    background-color: #ff9933;
-    height: 4em;
-    text-align: center;
-    justify-content: center;
-}
-
 #destaques{
     background-color: #a70000;
     margin-top: -0.5em;
-    padding-top: 4em;
+    padding-top: 2em;
     padding-bottom: 8em;
 }
 
@@ -250,20 +253,22 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
     color: #fff;
     font-size: 6em;
     height: 1.5em;
+    border-radius: 20px;
 }
 
 .destaque p{
     background-color: #00347f;
     color: #fff;
-    font-size: 3.5em;
+    font-size: 40px;
     height: 8.5em;
-    text-align: center 
+    text-align: center;
+    border-radius: 20px;
 }
 
 #equipe{
     background: #005eb9;
     color: #fff;
-    padding-top: 4em;
+    padding-top: 2em;
     padding-bottom: 4em;
     margin-top: -0.5em
 }
@@ -274,14 +279,13 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
     padding-bottom: 1em;
 }
 
-#equipe p{
-    background-color: #000;
+.func p{
     font-size: 40px;
     text-align: center;
     width: 20%
 }
 
-#equipe img{
+.func img{
     max-width: 5%;
     max-height: 5%;
     height: 100%;
@@ -295,3 +299,97 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
     padding-right: 25%;
 }
 
+.fund{
+    display: flex;
+    flex-direction: row;
+}
+
+.numero_um{
+    display: flex;
+    flex-direction: column;
+}
+
+.numero_um p{
+    font-size: 3em;
+}
+
+.numero_um img{
+    height: 400px;
+    width: 400px;
+}
+
+#beneficios{
+    background-color: #aaff00;
+    color: #fff;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    margin-top: -0.4em;
+}
+
+#beneficios h2{
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 1em;
+    color: #00347f;
+}
+
+#beneficios p{
+    background-color: #00347f;
+    font-size: 40px;
+    text-align: center;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.vantagens{
+    display: flex;
+    flex-direction: column;
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: row;
+}
+
+#sac{
+    background-color: #9999;
+    padding-top: 2em;
+    margin-top: -0.4em;
+}
+
+#sac h2{
+    font-size: 60px;
+    color: #00347f;
+    text-align: center;
+}
+
+iframe{
+    width: 100%;
+    margin-top: -0.35em;
+}
+
+#contato{
+    background-color: #00347f;
+    color: #fff;
+    margin-top: -0.25em;
+    font-size: 25px;
+}
+
+#contato img{
+    width: 3%;
+    height: 3%;
+}
+
+#contato > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width:1366px){
+    .logo img{
+        height: 400px;
+        width: 15%;
+        margin-left: 41%;
+    }
+}
