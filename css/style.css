@@ -19,6 +19,7 @@ nav > ul {
     height: 2.5em;
     align-items: center;
 }
+
 nav a{
     text-decoration: none;
     color: #fff;
@@ -29,6 +30,10 @@ nav a{
 nav a:hover{
     color: #005eb9;
     background-color: #ff9933;
+}
+
+#btn_menu{
+    display: none;
 }
 
 .logo{
@@ -47,7 +52,7 @@ h1{
     color: #fff;
     height: 80px;
     font-size: 70px;
-    padding-left: 30%;
+    text-align: center;
     margin-top: -0.4em;
 }
 
@@ -94,22 +99,17 @@ h1{
     padding-bottom: 0.5em;
 }
 
+.historia > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .historia img{
     width: 400px;
     height: 400px;
-    margin-left: 355px;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-}
-
-.historia{
-    display: flex;
-    flex-direction: column;
-}
-
-.comparacao{
-    display: flex;
-    flex-direction: row;
 }
 
 #login{
@@ -131,7 +131,7 @@ label{
 
 form{
     margin: 0 auto;
-    width: 30%;
+    width: 50%;
     text-align: left;
 }
 
@@ -202,7 +202,7 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
     display: flex;
     flex-direction: column;
     background-color: #ff9933;
-    height: 4em;
+    height: 3.5em;
     text-align: center;
     justify-content: center;
     border-radius: 10px;
@@ -217,7 +217,7 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
 }
 
 .preco{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -239,8 +239,6 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
     font-size: 80px;
     color: #fff;
     padding-bottom: 2.5em;
-    width: 15%;
-    height: 80px;
 }
 
 .destaque > div{
@@ -259,10 +257,15 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
 .destaque p{
     background-color: #00347f;
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     height: 8.5em;
     text-align: center;
     border-radius: 20px;
+}
+
+.destaque img{
+    height: 700px;
+    width: 700px;
 }
 
 #equipe{
@@ -286,8 +289,8 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
 }
 
 .func img{
-    max-width: 5%;
-    max-height: 5%;
+    max-width: 15%;
+    max-height: 15%;
     height: 100%;
     width: 100%;
 }
@@ -386,10 +389,370 @@ iframe{
     justify-content: center;
 }
 
+@media (max-width: 1420px){
+    .primeiro > div{
+        height: 3.5em;
+        border-radius: 8px;
+    }
+    
+    .nome_plano{
+        font-size: 2.5em;
+    }
+    
+    .descricao{
+        font-size: 1.5em;
+    }
+    
+    .preco{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+
 @media (max-width:1366px){
     .logo img{
         height: 400px;
-        width: 15%;
+        width: 25%;
         margin-left: 41%;
+    }
+
+    .destaque img{
+        height: 600px;
+        width: 600px;
+    }
+
+    .destaque p{
+        background-color: #00347f;
+        color: #fff;
+        font-size: 25px;
+        height: 8em;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .beneficios img{
+        height: 400px;
+        width: 600px;
+    }
+}
+
+@media (max-width:1055px){
+    .logo img{
+        height: 300px;
+        width: 22%;
+    }
+
+    nav > ul {
+        font-size: 20px;
+        height: 55px;  
+    }
+
+    nav a:hover{
+       color: #ff9933;
+       text-shadow: 2px 2px 2px #005eb9;
+       background-color: #00347f;
+    }
+
+    h1{
+        height: 50px;
+        font-size: 40px;
+        margin-top: -0.7em;
+    }
+
+    .banner > img{
+        height: 350px;
+    }
+
+    .quem_somos{
+        font-size: 40px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-top: -0.3em;
+    }
+
+    .historia{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 35px;
+        margin-top: -0.3em;
+    }
+
+    .historia img{
+        width: 300px;
+        height: 300px;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    #login{
+        margin-top: -0.6em;
+        font-size: 10px;
+    }
+
+    #login h2{
+        font-size: 40px;
+    }
+
+    #planos h2{
+        font-size: 50px;
+    }
+
+    .primeiro > div{
+        height: 4.5em;
+        border-radius: 10px;
+    }
+    
+    .nome_plano{
+        font-size: 2em;
+    }
+    
+    .descricao{
+        font-size: 1em;
+    }
+    
+    .preco{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    #destaques h2{
+        font-size: 60px;
+    }
+
+    .destaque h3{
+        font-size: 4em;
+        height: 1.5em;
+    }
+
+    .destaque img{
+        height: 350px;
+        width: 350px;
+    }
+
+    #equipe h2{
+        font-size: 50px;
+    }
+
+    .func p{
+        font-size: 30px;
+        text-align: center;
+        width: 20%
+    }
+
+    .numero_um p{
+        font-size: 2em;
+    }
+
+    .numero_um img{
+        height: 250px;
+        width: 250px;
+    }
+
+    #beneficios h2{
+        font-size: 50px;
+    }
+
+    #beneficios p{
+        font-size: 30px;
+        text-align: center;
+        width: 70%;
+        border-radius: 10px;
+    }
+
+    .beneficios img{
+        height: 300px;
+        width: 500px;
+    }
+    
+    #sac h2{
+        font-size: 50px;
+    }
+
+    #sac{
+        font-size: 10px
+    }
+
+    #contato{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        background-color: #aaaa;
+        padding-top: 20px;
+        margin-top: -20px;
+    }
+    .menu{
+        position: absolute;
+        top: 290px;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    transition: linear 2s;
+    
+        display: none;
+        z-index: 3;
+    }    
+    .active{
+        display: block;
+    }
+
+    #btn_menu{
+        display: block;
+        padding: 0.8em;
+        margin-right: 3em;
+        background-color: #00347f;
+        color: #fff;
+        height: 5%;
+        width: 5%;
+        top: 0;
+        margin-bottom: 0.8em;
+
+    }  
+    
+    .logo{
+        margin-bottom: 10px;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        background-color: #00347f;
+        padding-bottom: 200px;
+        padding-top: 200px;
+    }
+    nav a{
+        display: block;
+    }
+
+    .logo img{
+        height: 230px;
+        width: 25%;
+    }
+
+
+    h1{
+        height: 35px;
+        font-size: 30px;
+        margin-top: -0.8em;
+    }
+
+    .banner > img{
+        height: 270px;
+    }
+
+    .quem_somos{
+        font-size: 30px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-top: -0.3em;
+    }
+
+    .historia{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 25px;
+        margin-top: -0.3em;
+    }
+
+    .historia img{
+        width: 200px;
+        height: 200px;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    #login{
+        margin-top: -0.6em;
+        font-size: 10px;
+    }
+
+    #login h2{
+        font-size: 30px;
+    }
+
+    #planos h2{
+        font-size: 35px;
+    }
+
+    .primeiro > div{
+        height: 4.5em;
+        border-radius: 10px;
+    }
+    
+    .nome_plano{
+        font-size: 2em;
+    }
+    
+    .descricao{
+        font-size: 1em;
+    }
+    
+    .preco{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    #destaques h2{
+        font-size: 60px;
+    }
+
+    .destaque h3{
+        font-size: 4em;
+        height: 1.5em;
+    }
+
+    .destaque img{
+        height: 350px;
+        width: 350px;
+    }
+
+    #equipe h2{
+        font-size: 50px;
+    }
+
+    .func p{
+        font-size: 30px;
+        text-align: center;
+        width: 20%
+    }
+
+    .numero_um p{
+        font-size: 2em;
+    }
+
+    .numero_um img{
+        height: 250px;
+        width: 250px;
+    }
+
+    #beneficios h2{
+        font-size: 50px;
+    }
+
+    #beneficios p{
+        font-size: 30px;
+        text-align: center;
+        width: 70%;
+        border-radius: 10px;
+    }
+
+    .beneficios img{
+        height: 300px;
+        width: 500px;
+    }
+    
+    #sac h2{
+        font-size: 50px;
+    }
+
+    #sac{
+        font-size: 10px
+    }
+
+    #contato{
+        font-size: 15px;
     }
 }
