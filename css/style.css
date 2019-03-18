@@ -81,11 +81,11 @@ h1{
 }
 
 .historia{
-    background-color: #000;
+    background-color: #00347f;
     padding-top: 1em;
     padding-bottom: 1em;
     font-size: 60px;
-    color: #ff9933;
+    color: #fff;
     margin-top: -0.2em;
 }
 
@@ -113,7 +113,7 @@ h1{
 }
 
 #login{
-    background-color: #545454;
+    background-color: #000;
     color: #fff;
     margin-top: -0.6em;
 }
@@ -227,7 +227,7 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
 }
 
 #destaques{
-    background-color: #a70000;
+    background-color: #ff9933;
     margin-top: -0.5em;
     padding-top: 2em;
     padding-bottom: 8em;
@@ -247,7 +247,7 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
 }
 
 .destaque h3{
-    background-color: #ff9933;
+    background-color: #005eb9;
     color: #fff;
     font-size: 6em;
     height: 1.5em;
@@ -255,7 +255,7 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
 }
 
 .destaque p{
-    background-color: #00347f;
+    background-color: #005eb9;
     color: #fff;
     font-size: 30px;
     height: 8.5em;
@@ -269,7 +269,7 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
 }
 
 #equipe{
-    background: #005eb9;
+    background: #00347f;
     color: #fff;
     padding-top: 2em;
     padding-bottom: 4em;
@@ -322,7 +322,7 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
 }
 
 #beneficios{
-    background-color: #aaff00;
+    background-color: #ff9933;
     color: #fff;
     padding-top: 2em;
     padding-bottom: 4em;
@@ -355,14 +355,14 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
 }
 
 #sac{
-    background-color: #9999;
+    background-color: #000;
     padding-top: 2em;
     margin-top: -0.4em;
 }
 
 #sac h2{
     font-size: 60px;
-    color: #00347f;
+    color: #fff;
     text-align: center;
 }
 
@@ -387,6 +387,12 @@ iframe{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.planos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 1420px){
@@ -435,6 +441,19 @@ iframe{
         height: 400px;
         width: 600px;
     }
+
+    .nome_plano{
+        font-size: 1.5em;
+    }
+
+    .descricao{
+        font-size: 1.2em;
+    }
+
+    .preco{
+        font-size: 2.5em;
+    }
+
 }
 
 @media (max-width:1055px){
@@ -526,8 +545,13 @@ iframe{
     }
 
     .destaque img{
-        height: 350px;
-        width: 350px;
+        height: 150px;
+        width: 150px;
+    }
+
+    .destaque{
+        display: flex;
+        flex-direction: column;
     }
 
     #equipe h2{
@@ -538,6 +562,15 @@ iframe{
         font-size: 30px;
         text-align: center;
         width: 20%
+    }
+
+    .func{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .func img{
+        height: 40px;
     }
 
     .numero_um p{
@@ -634,9 +667,8 @@ iframe{
 
 
     h1{
-        height: 35px;
-        font-size: 30px;
-        margin-top: -0.8em;
+        height: 25px;
+        font-size: 20px;
     }
 
     .banner > img{
@@ -644,69 +676,69 @@ iframe{
     }
 
     .quem_somos{
-        font-size: 30px;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        margin-top: -0.3em;
+        font-size: 25px;
     }
 
     .historia{
-        padding-top: 1em;
-        padding-bottom: 1em;
-        font-size: 25px;
-        margin-top: -0.3em;
+        font-size: 20px;
     }
 
     .historia img{
-        width: 200px;
-        height: 200px;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
+        width: 150px;
+        height: 150px;
     }
 
     #login{
-        margin-top: -0.6em;
         font-size: 10px;
     }
 
     #login h2{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #planos h2{
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .primeiro > div{
-        height: 4.5em;
-        border-radius: 10px;
+        height: 3.5em;
+        border-radius: 5px;
     }
     
     .nome_plano{
-        font-size: 2em;
-    }
-    
-    .descricao{
         font-size: 1em;
     }
     
+    .descricao{
+        font-size: 0.8em;
+    }
+    
     .preco{
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: bold;
     }
 
+    .planos{
+        display: flex;
+        flex-direction: column;
+    }
+
     #destaques h2{
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .destaque h3{
-        font-size: 4em;
+        font-size: 2em;
         height: 1.5em;
     }
 
+    .destaque p{
+        font-size: 20px;
+    }
+
     .destaque img{
-        height: 350px;
-        width: 350px;
+        height: 200px;
+        width: 200px;
     }
 
     #equipe h2{
@@ -714,13 +746,23 @@ iframe{
     }
 
     .func p{
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
         width: 20%
     }
 
+    .fund img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .fund{
+        display: flex;
+        flex-direction: column;
+    }
+
     .numero_um p{
-        font-size: 2em;
+        font-size: 1em;
     }
 
     .numero_um img{
@@ -729,23 +771,23 @@ iframe{
     }
 
     #beneficios h2{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     #beneficios p{
-        font-size: 30px;
+        font-size: 15px;
         text-align: center;
         width: 70%;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     .beneficios img{
-        height: 300px;
-        width: 500px;
+        height: 150px;
+        width: 200px;
     }
     
     #sac h2{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     #sac{
@@ -753,6 +795,20 @@ iframe{
     }
 
     #contato{
-        font-size: 15px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .logo img{
+        height: 100px;
+    }
+
+    .primeiro > div{
+        border-radius: 2px;
+    }
+    
+    .descricao{
+        font-size: 1.2em;
     }
 }
