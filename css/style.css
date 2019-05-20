@@ -198,27 +198,15 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
     padding-bottom: 8em;
 }
 
-.primeiro > div{
+.primeiro{
     display: flex;
     flex-direction: column;
     background-color: #ff9933;
-    height: 3.5em;
+    padding: 0.2em;
+    height: 11em;
     text-align: center;
     justify-content: center;
-    border-radius: 10px;
-}
-
-.nome_plano{
-    font-size: 3em;
-}
-
-.descricao{
     font-size: 2em;
-}
-
-.preco{
-    font-size: 1.5em;
-    font-weight: bold;
 }
 
 .destaque{
@@ -336,17 +324,16 @@ input{ /*com isso vc não precisa criar um id e consegue estilizar o que vc quer
     color: #00347f;
 }
 
-#beneficios p{
-    background-color: #00347f;
-    font-size: 40px;
-    text-align: center;
-    width: 60%;
-    border-radius: 10px;
-}
-
 .vantagens{
     display: flex;
     flex-direction: column;
+    background-color: #00347f;
+    font-size: 40px;
+    text-align: center;
+    width: 22%;
+    border-radius: 10px;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
 }
 
 .beneficios{
@@ -393,6 +380,12 @@ iframe{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+@media (max-width: 1464px){
+    .primeiro{
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 1420px){
@@ -454,6 +447,17 @@ iframe{
         font-size: 2.5em;
     }
 
+}
+
+@media(max-width: 1155px){
+    .planos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .primeiro{
+        font-size: 35px;
+    }
 }
 
 @media (max-width:1055px){
@@ -700,28 +704,15 @@ iframe{
         font-size: 25px;
     }
 
-    .primeiro > div{
-        height: 3.5em;
-        border-radius: 5px;
-    }
-    
-    .nome_plano{
-        font-size: 1em;
-    }
-    
-    .descricao{
-        font-size: 0.8em;
-    }
-    
-    .preco{
-        font-size: 1em;
-        font-weight: bold;
-    }
-
     .planos{
         display: flex;
         flex-direction: column;
     }
+    
+    .primeiro{
+        font-size: 25px;
+    }
+
 
     #destaques h2{
         font-size: 40px;
